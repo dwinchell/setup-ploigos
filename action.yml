@@ -1,0 +1,8 @@
+name: 'Setup Ploigos'
+description: 'Install the Ploigos Step Runner (PSR)'
+inputs:
+outputs:
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+
