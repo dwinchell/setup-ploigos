@@ -1,0 +1,11 @@
+on: [push]
+
+jobs:
+  test_action_job:
+    runs-on: ubuntu-latest
+    name: Test Setup Ploigos Action
+    steps:
+      - name: Run the action
+        id: run-action
+        uses: dwinchell/setup-ploigos
+
