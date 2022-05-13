@@ -13,7 +13,7 @@ echo "**********************"
 echo "*********************"
 echo "* Update Python Pip *"
 echo "*********************"
-source ${HOME}/bin/activate
+#source ${HOME}/bin/activate
 python -m pip install --upgrade pip
 
 STEP_RUNNER_LIB_SOURCE_URL="git+https://github.com/ploigos/ploigos-step-runner.git@main"
