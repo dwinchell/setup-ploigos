@@ -7,5 +7,5 @@ jobs:
     steps:
       - name: Run the action
         id: run-action
-        uses: dwinchell/setup-ploigos
+        uses: dwinchell/setup-ploigos@main
 
