@@ -7,12 +7,8 @@ jobs:
     steps:
       - name: Setup Ploigos
         id: setup-psr
-        uses: dwinchell/setup-ploigos@main
-      - name: Examine Tool Cache
-        id: tool-cache
-        run: |
-          echo Tool cache "${{ runner.tool_cache }}"
-          find "${{ runner.tool_cache }}"
+        run: python -m pip install --upgrade git+https://github.com/ploigos/ploigos-step-runner.git@main
       - name: Run Ploigos
         id: run-psr
         run: psr --help
+
