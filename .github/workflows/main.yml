@@ -5,7 +5,9 @@ jobs:
     runs-on: ubuntu-latest
     name: Test Setup Ploigos Action
     steps:
-      - name: Run the action
-        id: run-action
+      - name: Setup Ploigos
+        id: setup-psr
         uses: dwinchell/setup-ploigos@main
-
+      - name: Run Ploigos
+        id: run-psr
+        run: psr --help
