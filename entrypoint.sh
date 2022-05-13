@@ -8,7 +8,7 @@ set -eu -o pipefail
 echo "**********************"
 echo "* Create Python venv *"
 echo "**********************"
-python -m venv --system-site-packages --copies ${HOME}
+#python -m venv --system-site-packages --copies ${HOME}
 
 echo "*********************"
 echo "* Update Python Pip *"
